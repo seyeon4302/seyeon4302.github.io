@@ -2,20 +2,20 @@
 #-------------------------------
 # General Site Settings
 
-title: Kross
+title: SERA Lab
 logo:
-author: themefisher
-description: this is meta description
-email: steve.fruits@email.com
-phone: +880 2544 658 256
-address: 125/A, CA Commercial Area, California, USA
+author: Seyeon Kim
+description: SERA Lab
+email: seyeon625@korea.ac.kr
+phone: +(82) 02 3290 3973 
+address: Korea University, Seoul, South Korea
 copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Getjekyllthemes](https://getjekyllthemes.com)
 
 menu:
-  - { name: About, link: "/about" }
-  - { name: Blog, link: "/blog" }
-  - { name: Portfolio, link: "/portfolio" }
-  - { name: Contact, link: "/contact" }
+  - { name: PEOPLE, link: "/about" }
+  - { name: RESEARCH, link: "/blog" }
+  - { name: PUBLICATION, link: "/portfolio" }
+  - { name: CONTACT, link: "/contact" }
 
 #-------------------------------
 # Google Analytics Section
