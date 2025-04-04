@@ -62,7 +62,7 @@
   year: 2022
   type: conference
   link: https://dl.acm.org/doi/pdf/10.1145/3503161.3548370
- icon: assets/images/publications/rfec.jpg
+  icon: assets/images/publications/rfec.jpg
   note: Oral (Top 2%)
 
 - authors: Seyeon Kim, Kyungmin Bin, Sangtae Ha, Kyunghan Lee, Song Chong
