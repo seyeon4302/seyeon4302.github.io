@@ -20,13 +20,13 @@ permalink: /publications/
 
           {% if item.icon %}
           <div style="width: 180px; height: 140px; overflow: hidden;"
-               class="mr-3 rounded shadow-sm d-flex align-items-center justify-content-center bg-light">
+               class="mr-3 rounded shadow-sm d-flex align-items-start justify-content-center bg-light">
             <img src="{{ site.baseurl }}/{{ item.icon }}" alt="Paper"
-                 style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                 style="max-width: 100%; max-height: 100%; object-fit: contain; align-self: flex-start;">
           </div>
           {% endif %}
 
-          <div>
+          <div style="flex: 1; min-width: 0;">
             <h5 class="mb-1 font-weight-bold">{{ item.title }}</h5>
             <p class="mb-1">{{ item.authors }}</p>
             <p class="mb-1"><em>{{ item.venue }}</em>, <strong>{{ item.year }}</strong></p>
