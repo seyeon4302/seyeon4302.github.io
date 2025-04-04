@@ -4,7 +4,7 @@
   year: 2025
   type: journal
   link: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10819653
-  icon: assets/images/icons/paper-icon.png
+  icon: assets/images/publications/neurobalancer.jpg
 
 - authors: Seonwoo Kim, Yoonsung Nam, Minwoo Park, Heewon Lee, Seyeon Kim*, Sangtae Ha
   title: "Dejavu: Reinforcement Learning-based Cloud Scheduling with Demonstration and Competition"
@@ -12,7 +12,7 @@
   year: 2024
   type: conference
   link: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10723527
-  icon: assets/images/icons/paper-icon.png
+  icon: assets/images/publications/dejavu.jpg
 
 - authors: Taeho Kim, Yanming Wang, Vatshank Chaturvedi, Lokesh Gupta, Seyeon Kim*, Yongin Kwon, Sangtae Ha
   title: "LLMem: Estimating GPU Memory Usage for Fine-Tuning Pre-Trained LLMs."
@@ -20,7 +20,7 @@
   year: 2024
   type: conference
   link: https://arxiv.org/pdf/2404.10933
-  icon: assets/images/icons/paper-icon.png
+  icon: assets/images/publications/llmem.jpg
   note: Long talk (Top 2%)
 
 - authors: Max Hollingsworth, Yaguang Zhang, Todd Schumann, Chris Anderson, Michael Cotton, Seyeon Kim, Sangtae Ha, Dirk Grunwald
@@ -29,7 +29,7 @@
   year: 2024
   type: workshop
   link: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10632813
-  icon: assets/images/icons/paper-icon.png
+  icon: assets/images/publications/repurposing.jpg
 
 - authors: Kyungmin Bin, Jongseok Park, Chanjeong Park, Seyeon Kim, Kyunghan Lee
   title: "CoActo: CoActive Neural Network Inference Offloading with Fine-grained and Concurrent Execution."
@@ -37,7 +37,7 @@
   year: 2024
   type: conference
   link: https://dl.acm.org/doi/pdf/10.1145/3643832.3661885
-  icon: assets/images/icons/paper-icon.png
+  icon: assets/images/publications/coacto.jpg
 
 - authors: Seyeon Kim, Kyungmin Bin, Donggyu Yang, Sangtae Ha, Kyunghan Lee, Song Chong
   title: "ENTRO: Tackling the Encoding and Networking Trade-off in Offloaded Video Analytics"
@@ -45,7 +45,7 @@
   year: 2023
   type: conference
   link: https://dl.acm.org/doi/pdf/10.1145/3581783.3613785
-  icon: assets/images/icons/paper-icon.png
+  icon: assets/images/publications/entro.jpg
 
 - authors: Seyeon Kim, Kyungmin Bin, Sangtae Ha, Kyunghan Lee, Song Chong
   title: "zTT: learning-based DVFS with zero thermal throttling for mobile devices."
@@ -53,7 +53,7 @@
   year: 2022
   type: magazine
   link: https://dl.acm.org/doi/pdf/10.1145/3529706.3529714
-  icon: assets/images/icons/paper-icon.png
+  icon: assets/images/publications/ztt_getmobile.jpg
   note: Invited paper (Highlight)
 
 - authors: Insoo Lee, Seyeon Kim, Sandesh Dhawaskar Sathyanarayana, Kyungmin Bin, Song Chong, Kyunghan Lee, Drik Grunwald, Sangtae Ha
@@ -62,7 +62,7 @@
   year: 2022
   type: conference
   link: https://dl.acm.org/doi/pdf/10.1145/3503161.3548370
-  icon: assets/images/icons/paper-icon.png
+ icon: assets/images/publications/rfec.jpg
   note: Oral (Top 2%)
 
 - authors: Seyeon Kim, Kyungmin Bin, Sangtae Ha, Kyunghan Lee, Song Chong
@@ -71,5 +71,5 @@
   year: 2021
   type: conference
   link: https://dl.acm.org/doi/pdf/10.1145/3458864.3468161
-  icon: assets/images/icons/paper-icon.png
+  icon: assets/images/publications/ztt_mobisys.jpg
   note: Best Paper
