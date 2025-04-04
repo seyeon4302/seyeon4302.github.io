@@ -16,10 +16,10 @@ permalink: /publications/
       {% assign pubs = site.data.publications | sort: 'year' | reverse %}
       {% for item in pubs %}
       <div class="col-md-12 mb-4">
-        <div class="p-4 shadow rounded bg-white d-flex">
+        <div class="p-4 shadow rounded bg-white d-flex align-items-start">
 
           {% if item.icon %}
-          <div style="width: 180px; height: 140px; overflow: hidden;"
+          <div style="width: 120px; height: 100px; overflow: hidden;"
                class="mr-3 rounded shadow-sm d-flex align-items-center justify-content-center bg-light">
             <img src="{{ site.baseurl }}/{{ item.icon }}" alt="Paper"
                  style="max-width: 100%; max-height: 100%; object-fit: contain;">
