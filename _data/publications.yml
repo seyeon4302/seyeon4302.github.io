@@ -2,7 +2,7 @@
   title: "NeuroBalancer: Balancing System Frequencies with Punctual Laziness for Timely and Energy-efficient DNN Inferences"
   venue: IEEE Transactions on Mobile Computing (IEEE TMC)
   year: 2025
-  type: Journal
+  type: journal
   link: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10819653
   icon: assets/images/icons/paper-icon.png
 
@@ -10,7 +10,7 @@
   title: "Dejavu: Reinforcement Learning-based Cloud Scheduling with Demonstration and Competition"
   venue: IEEE International Conference on Mobile Ad Hoc and Smart Systems (IEEE MASS)
   year: 2024
-  type: Conference
+  type: conference
   link: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10723527
   icon: assets/images/icons/paper-icon.png
 
@@ -18,15 +18,16 @@
   title: "LLMem: Estimating GPU Memory Usage for Fine-Tuning Pre-Trained LLMs."
   venue: International Joint Conference on Artificial Intelligence (IJCAI)
   year: 2024
-  type: Conference
+  type: conference
   link: https://arxiv.org/pdf/2404.10933
   icon: assets/images/icons/paper-icon.png
-  
+  note: Long talk (Top 2%)
+
 - authors: Max Hollingsworth, Yaguang Zhang, Todd Schumann, Chris Anderson, Michael Cotton, Seyeon Kim, Sangtae Ha, Dirk Grunwald
   title: "Repurposing Cellular Reference Signals: Accurate RSRP Measurements with Mobile Phones."
   venue: IEEE International Symposium on Dynamic Spectrum Access Networks - Workshop (IEEE DySPAN Workshop)
   year: 2024
-  type: Workshop
+  type: workshop
   link: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10632813
   icon: assets/images/icons/paper-icon.png
 
@@ -34,7 +35,7 @@
   title: "CoActo: CoActive Neural Network Inference Offloading with Fine-grained and Concurrent Execution."
   venue: ACM International Conference on Mobile Systems, Applications, and Services (ACM Mobisys)
   year: 2024
-  type: Conference
+  type: conference
   link: https://dl.acm.org/doi/pdf/10.1145/3643832.3661885
   icon: assets/images/icons/paper-icon.png
 
@@ -42,31 +43,33 @@
   title: "ENTRO: Tackling the Encoding and Networking Trade-off in Offloaded Video Analytics"
   venue: ACM International Conference on Multimedia (ACM Multimedia)
   year: 2023
-  type: Conference
+  type: conference
   link: https://dl.acm.org/doi/pdf/10.1145/3581783.3613785
   icon: assets/images/icons/paper-icon.png
 
 - authors: Seyeon Kim, Kyungmin Bin, Sangtae Ha, Kyunghan Lee, Song Chong
   title: "zTT: learning-based DVFS with zero thermal throttling for mobile devices."
-  venue: ACM GetMobile: Mobile Computing and Communications (ACM GetMobile)
+  venue: "ACM GetMobile: Mobile Computing and Communications (ACM GetMobile)"
   year: 2022
-  type: Magazine
+  type: magazine
   link: https://dl.acm.org/doi/pdf/10.1145/3529706.3529714
   icon: assets/images/icons/paper-icon.png
+  note: Invited paper (Highlight)
 
 - authors: Insoo Lee, Seyeon Kim, Sandesh Dhawaskar Sathyanarayana, Kyungmin Bin, Song Chong, Kyunghan Lee, Drik Grunwald, Sangtae Ha
   title: "RL-based FEC Adjustment for better QoE in WebRTC."
   venue: ACM International Conference on Multimedia (ACM Multimedia)
   year: 2022
-  type: Conference
+  type: conference
   link: https://dl.acm.org/doi/pdf/10.1145/3503161.3548370
   icon: assets/images/icons/paper-icon.png
+  note: Oral (Top 2%)
 
 - authors: Seyeon Kim, Kyungmin Bin, Sangtae Ha, Kyunghan Lee, Song Chong
   title: "zTT: learning-based DVFS with zero thermal throttling for mobile devices."
   venue: ACM International Conference on Mobile Systems, Applications, and Services (ACM Mobisys)
   year: 2021
-  type: Conference
+  type: conference
   link: https://dl.acm.org/doi/pdf/10.1145/3458864.3468161
   icon: assets/images/icons/paper-icon.png
-
+  note: Best Paper
