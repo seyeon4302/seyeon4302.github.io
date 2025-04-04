@@ -3,7 +3,7 @@
   venue: IEEE Transactions on Mobile Computing (IEEE TMC)
   year: 2025
   type: Journal
-  link: https://example.com
+  link: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10819653
   icon: assets/images/icons/paper-icon.png
 
 - authors: Seonwoo Kim, Yoonsung Nam, Minwoo Park, Heewon Lee, Seyeon Kim*, Sangtae Ha
@@ -11,7 +11,7 @@
   venue: IEEE International Conference on Mobile Ad Hoc and Smart Systems (IEEE MASS)
   year: 2024
   type: Conference
-  link: https://example.com
+  link: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10723527
   icon: assets/images/icons/paper-icon.png
 
 - authors: Taeho Kim, Yanming Wang, Vatshank Chaturvedi, Lokesh Gupta, Seyeon Kim*, Yongin Kwon, Sangtae Ha
@@ -19,7 +19,7 @@
   venue: International Joint Conference on Artificial Intelligence (IJCAI)
   year: 2024
   type: Conference
-  link: https://example.com
+  link: https://arxiv.org/pdf/2404.10933
   icon: assets/images/icons/paper-icon.png
   
 - authors: Max Hollingsworth, Yaguang Zhang, Todd Schumann, Chris Anderson, Michael Cotton, Seyeon Kim, Sangtae Ha, Dirk Grunwald
@@ -27,7 +27,7 @@
   venue: IEEE International Symposium on Dynamic Spectrum Access Networks - Workshop (IEEE DySPAN Workshop)
   year: 2024
   type: Workshop
-  link: https://example.com
+  link: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10632813
   icon: assets/images/icons/paper-icon.png
 
 - authors: Kyungmin Bin, Jongseok Park, Chanjeong Park, Seyeon Kim, Kyunghan Lee
@@ -35,7 +35,7 @@
   venue: ACM International Conference on Mobile Systems, Applications, and Services (ACM Mobisys)
   year: 2024
   type: Conference
-  link: https://example.com
+  link: https://dl.acm.org/doi/pdf/10.1145/3643832.3661885
   icon: assets/images/icons/paper-icon.png
 
 - authors: Seyeon Kim, Kyungmin Bin, Donggyu Yang, Sangtae Ha, Kyunghan Lee, Song Chong
@@ -43,7 +43,7 @@
   venue: ACM International Conference on Multimedia (ACM Multimedia)
   year: 2023
   type: Conference
-  link: https://example.com
+  link: https://dl.acm.org/doi/pdf/10.1145/3581783.3613785
   icon: assets/images/icons/paper-icon.png
 
 - authors: Seyeon Kim, Kyungmin Bin, Sangtae Ha, Kyunghan Lee, Song Chong
@@ -51,7 +51,7 @@
   venue: ACM GetMobile: Mobile Computing and Communications (ACM GetMobile)
   year: 2022
   type: Magazine
-  link: https://example.com
+  link: https://dl.acm.org/doi/pdf/10.1145/3529706.3529714
   icon: assets/images/icons/paper-icon.png
 
 - authors: Insoo Lee, Seyeon Kim, Sandesh Dhawaskar Sathyanarayana, Kyungmin Bin, Song Chong, Kyunghan Lee, Drik Grunwald, Sangtae Ha
@@ -59,7 +59,7 @@
   venue: ACM International Conference on Multimedia (ACM Multimedia)
   year: 2022
   type: Conference
-  link: https://example.com
+  link: https://dl.acm.org/doi/pdf/10.1145/3503161.3548370
   icon: assets/images/icons/paper-icon.png
 
 - authors: Seyeon Kim, Kyungmin Bin, Sangtae Ha, Kyunghan Lee, Song Chong
@@ -67,6 +67,6 @@
   venue: ACM International Conference on Mobile Systems, Applications, and Services (ACM Mobisys)
   year: 2021
   type: Conference
-  link: https://example.com
+  link: https://dl.acm.org/doi/pdf/10.1145/3458864.3468161
   icon: assets/images/icons/paper-icon.png
 
