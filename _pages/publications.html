@@ -16,15 +16,24 @@ permalink: /publications/
       {% assign pubs = site.data.publications | sort: 'year' | reverse %}
       {% for item in pubs %}
       <div class="col-md-12 mb-4">
-        <div class="p-4 shadow rounded bg-white">
-          <h5 class="mb-1 font-weight-bold">{{ item.title }}</h5>
-          <p class="mb-1">{{ item.authors }}</p>
-          <p class="mb-1"><em>{{ item.venue }}</em>, <strong>{{ item.year }}</strong></p>
-          {% if item.link %}
-          <a href="{{ item.link }}" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
-          {% endif %}
+        <div class="col-md-12 mb-4">
+          <div class="p-4 shadow rounded bg-white d-flex">
+            
+            {% if item.icon %}
+            <!-- 아이콘 이미지가 있는 경우에만 출력 -->
+            <img src="{{ site.baseurl }}/{{ item.icon }}" alt="Paper" width="32" class="mr-3 mt-1">
+            {% endif %}
+        
+            <div>
+              <h5 class="mb-1 font-weight-bold">{{ item.title }}</h5>
+              <p class="mb-1">{{ item.authors }}</p>
+              <p class="mb-1"><em>{{ item.venue }}</em>, <strong>{{ item.year }}</strong></p>
+              {% if item.link %}
+              <a href="{{ item.link }}" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
+              {% endif %}
+            </div>
+          </div>
         </div>
-      </div>
       {% endfor %}
     </div>
   </div>
