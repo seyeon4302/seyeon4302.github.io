@@ -26,33 +26,31 @@ permalink: /publications/
           </div>
           {% endif %}
 
-
           <div>
             <h5 class="mb-1 font-weight-bold">{{ item.title }}</h5>
             <p class="mb-1">{{ item.authors }}</p>
             <p class="mb-1"><em>{{ item.venue }}</em>, <strong>{{ item.year }}</strong></p>
 
-            {% if item.type %}
-              {% assign t = item.type | downcase %}
-              {% assign badge_class = "badge-secondary" %}
-              {% if t == "conference" %}
-                {% assign badge_class = "badge-primary" %}
-              {% elsif t == "journal" %}
-                {% assign badge_class = "badge-success" %}
-              {% elsif t == "workshop" %}
-                {% assign badge_class = "badge-info" %}
-              {% elsif t == "magazine" %}
-                {% assign badge_class = "badge-dark" %}
+            {% if item.type or item.note %}
+            <p class="mb-2">
+              {% if item.type %}
+                {% assign t = item.type | downcase %}
+                {% assign badge_class = "badge-secondary" %}
+                {% if t == "conference" %}
+                  {% assign badge_class = "badge-primary" %}
+                {% elsif t == "journal" %}
+                  {% assign badge_class = "badge-success" %}
+                {% elsif t == "workshop" %}
+                  {% assign badge_class = "badge-info" %}
+                {% elsif t == "magazine" %}
+                  {% assign badge_class = "badge-dark" %}
+                {% endif %}
+                <span class="badge {{ badge_class }} text-capitalize">{{ item.type }}</span>
               {% endif %}
 
-              <p class="mb-1">
-                <span class="badge {{ badge_class }} text-capitalize">{{ item.type }}</span>
-              </p>
-            {% endif %}
-
-            {% if item.note %}
-            <p class="mb-2">
-              <span class="badge badge-warning">{{ item.note }}</span>
+              {% if item.note %}
+                <span class="badge badge-warning ml-1">{{ item.note }}</span>
+              {% endif %}
             </p>
             {% endif %}
 
