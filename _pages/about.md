@@ -1,7 +1,7 @@
 ---
 layout: about
-title: SERA Lab. Members
-author: HOST: Prof. Seyeon Kim
+title: SERA Lab Members
+author: Prof. Seyeon Kim
 image: assets/images/about/seyeonkim.jpg
 signature: assets/images/about/signature.png
 ---
