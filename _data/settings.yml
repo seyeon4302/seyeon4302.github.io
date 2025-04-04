@@ -14,7 +14,7 @@ copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.c
 menu:
   - { name: PEOPLE, link: "/about" }
   - { name: RESEARCH, link: "/blog" }
-  - { name: PUBLICATION, link: "/portfolio" }
+  - { name: PUBLICATION, link: "/publications" }
   - { name: PROJECT, link: "/contact" }
   - { name: CONTACT, link: "/contact" }
 
