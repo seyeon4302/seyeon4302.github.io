@@ -13,7 +13,7 @@ permalink: /publications/
     </div>
 
     <div class="row">
-      {% assign pubs = site.data.settings.publications | sort: 'year' | reverse %}
+      {% assign pubs = site.data.publications | sort: 'year' | reverse %}
       {% for item in pubs %}
       <div class="col-md-12 mb-4">
         <div class="p-4 shadow rounded bg-white">
