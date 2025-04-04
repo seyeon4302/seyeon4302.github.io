@@ -19,7 +19,8 @@ permalink: /publications/
         <div class="p-4 shadow rounded bg-white d-flex">
 
           {% if item.icon %}
-         <img src="{{ site.baseurl }}/{{ item.icon }}" alt="Paper" style="height: 100px; width: auto;" class="mr-3 rounded shadow-sm">
+          <img src="{{ site.baseurl }}/{{ item.icon }}" alt="Paper"
+               style="height: 100px; width: auto;" class="mr-3 rounded shadow-sm">
           {% endif %}
 
           <div>
@@ -28,7 +29,21 @@ permalink: /publications/
             <p class="mb-1"><em>{{ item.venue }}</em>, <strong>{{ item.year }}</strong></p>
 
             {% if item.type %}
-            <p class="mb-1 text-muted text-capitalize">Type: {{ item.type }}</p>
+              {% assign t = item.type | downcase %}
+              {% assign badge_class = "badge-secondary" %}
+              {% if t == "conference" %}
+                {% assign badge_class = "badge-primary" %}
+              {% elsif t == "journal" %}
+                {% assign badge_class = "badge-success" %}
+              {% elsif t == "workshop" %}
+                {% assign badge_class = "badge-info" %}
+              {% elsif t == "magazine" %}
+                {% assign badge_class = "badge-dark" %}
+              {% endif %}
+
+              <p class="mb-1">
+                <span class="badge {{ badge_class }} text-capitalize">{{ item.type }}</span>
+              </p>
             {% endif %}
 
             {% if item.note %}
