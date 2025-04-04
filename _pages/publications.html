@@ -13,12 +13,13 @@ permalink: /publications/
     </div>
 
     <div class="row">
-      {% for item in site.data.settings.publications %}
+      {% assign pubs = site.data.settings.publications | sort: 'year' | reverse %}
+      {% for item in pubs %}
       <div class="col-md-12 mb-4">
         <div class="p-4 shadow rounded bg-white">
           <h5 class="mb-1 font-weight-bold">{{ item.title }}</h5>
           <p class="mb-1">{{ item.authors }}</p>
-          <p class="mb-1"><em>{{ item.venue }}</em>, {{ item.year }}</p>
+          <p class="mb-1"><em>{{ item.venue }}</em>, <strong>{{ item.year }}</strong></p>
           {% if item.link %}
           <a href="{{ item.link }}" target="_blank" class="btn btn-sm btn-outline-primary">View Paper</a>
           {% endif %}
