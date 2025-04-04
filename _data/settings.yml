@@ -56,18 +56,18 @@ blurb-btn-name: know more
 # About Page
 
 # Work Process Section
-work-process:
-  - title: "Research and Plan"
-    icon: "assets/images/icons/plan.png"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+# work-process:
+#   - title: "Research and Plan"
+#     icon: "assets/images/icons/plan.png"
+#     content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 
-  - title: "Design and Develop"
-    icon: "assets/images/icons/design.png"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+#   - title: "Design and Develop"
+#     icon: "assets/images/icons/design.png"
+#     content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 
-  - title: "Deliver"
-    icon: "assets/images/icons/print.png"
-    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+#   - title: "Deliver"
+#     icon: "assets/images/icons/print.png"
+#     content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 
 # My Team Section
 # team:
@@ -226,22 +226,22 @@ portfolio-items:
     portfolio-type:
       - type: "design"
 
-  - image: "assets/images/portfolio/item-1.png"
-    url: "#"
-    portfolio-type:
-      - type: "branding"
+  # - image: "assets/images/portfolio/item-1.png"
+  #   url: "#"
+  #   portfolio-type:
+  #     - type: "branding"
 
-  - image: "assets/images/portfolio/item-3.png"
-    url: "#"
-    portfolio-type:
-      - type: "design"
-      - type: "illustration"
-      - type: "branding"
+  # - image: "assets/images/portfolio/item-3.png"
+  #   url: "#"
+  #   portfolio-type:
+  #     - type: "design"
+  #     - type: "illustration"
+  #     - type: "branding"
 
-  - image: "assets/images/portfolio/item-7.png"
-    url: "#"
-    portfolio-type:
-      - type: "illustration"
+  # - image: "assets/images/portfolio/item-7.png"
+  #   url: "#"
+  #   portfolio-type:
+  #     - type: "illustration"
 
 #-------------------------------
 # Testimonials Section
