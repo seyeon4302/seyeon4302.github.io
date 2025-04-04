@@ -49,10 +49,10 @@ hero:
 # About (Section and Page)
 
 # About Section
-blurb: Under construction
+# blurb: Under construction
 
-blurb-btn-link: "/about"
-blurb-btn-name: know more
+# blurb-btn-link: "/about"
+# blurb-btn-name: know more
 
 # About Page
 
@@ -172,60 +172,60 @@ blurb-btn-name: know more
 # Portfolio (Section and Page)
 
 # Portfolio Home Section
-portfolio-home-items:
-  - image: "assets/images/portfolio/item-1.png"
-    url: "#"
+# portfolio-home-items:
+#   - image: "assets/images/portfolio/item-1.png"
+#     url: "#"
 
-  - image: "assets/images/portfolio/item-2.png"
-    url: "#"
+#   - image: "assets/images/portfolio/item-2.png"
+#     url: "#"
 
-  - image: "assets/images/portfolio/item-3.png"
-    url: "#"
+#   - image: "assets/images/portfolio/item-3.png"
+#     url: "#"
 
-  - image: "assets/images/portfolio/item-4.png"
-    url: "#"
+#   - image: "assets/images/portfolio/item-4.png"
+#     url: "#"
 
-  - image: "assets/images/portfolio/item-5.png"
-    url: "#"
+#   - image: "assets/images/portfolio/item-5.png"
+#     url: "#"
 
 # Portfolio Page
-portfolio-label:
-  - { title: "UI/UX Design", type: "design" }
-  - { title: "BRANDING", type: "branding" }
-  - { title: "ILLUSTRATION", type: "illustration" }
+# portfolio-label:
+#   - { title: "UI/UX Design", type: "design" }
+#   - { title: "BRANDING", type: "branding" }
+#   - { title: "ILLUSTRATION", type: "illustration" }
 
-portfolio-items:
-  - image: "assets/images/portfolio/item-1.png"
-    url: "#"
-    portfolio-type:
-      - type: "design"
-      - type: "illustration"
+# portfolio-items:
+#   - image: "assets/images/portfolio/item-1.png"
+#     url: "#"
+#     portfolio-type:
+#       - type: "design"
+#       - type: "illustration"
 
-  - image: "assets/images/portfolio/item-2.png"
-    url: "#"
-    portfolio-type:
-      - type: "branding"
+#   - image: "assets/images/portfolio/item-2.png"
+#     url: "#"
+#     portfolio-type:
+#       - type: "branding"
 
-  - image: "assets/images/portfolio/item-3.png"
-    url: "#"
-    portfolio-type:
-      - type: "illustration"
+#   - image: "assets/images/portfolio/item-3.png"
+#     url: "#"
+#     portfolio-type:
+#       - type: "illustration"
 
-  - image: "assets/images/portfolio/item-6.png"
-    url: "#"
-    portfolio-type:
-      - type: "design"
-      - type: "branding"
+#   - image: "assets/images/portfolio/item-6.png"
+#     url: "#"
+#     portfolio-type:
+#       - type: "design"
+#       - type: "branding"
 
-  - image: "assets/images/portfolio/item-8.png"
-    url: "#"
-    portfolio-type:
-      - type: "illustration"
+#   - image: "assets/images/portfolio/item-8.png"
+#     url: "#"
+#     portfolio-type:
+#       - type: "illustration"
 
-  - image: "assets/images/portfolio/item-5.png"
-    url: "#"
-    portfolio-type:
-      - type: "design"
+#   - image: "assets/images/portfolio/item-5.png"
+#     url: "#"
+#     portfolio-type:
+#       - type: "design"
 
   # - image: "assets/images/portfolio/item-1.png"
   #   url: "#"
@@ -266,36 +266,36 @@ portfolio-items:
 #-------------------------------
 # Client Slider Section
 
-client-slider-items:
-  - logo: "assets/images/clients-logo/client-logo-1.png"
-    url: "#"
+# client-slider-items:
+#   - logo: "assets/images/clients-logo/client-logo-1.png"
+#     url: "#"
 
-  - logo: "assets/images/clients-logo/client-logo-2.png"
-    url: "#"
+#   - logo: "assets/images/clients-logo/client-logo-2.png"
+#     url: "#"
 
-  - logo: "assets/images/clients-logo/client-logo-3.png"
-    url: "#"
+#   - logo: "assets/images/clients-logo/client-logo-3.png"
+#     url: "#"
 
-  - logo: "assets/images/clients-logo/client-logo-4.png"
-    url: "#"
+#   - logo: "assets/images/clients-logo/client-logo-4.png"
+#     url: "#"
 
-  - logo: "assets/images/clients-logo/client-logo-5.png"
-    url: "#"
+#   - logo: "assets/images/clients-logo/client-logo-5.png"
+#     url: "#"
 
-  - logo: "assets/images/clients-logo/client-logo-1.png"
-    url: "#"
+#   - logo: "assets/images/clients-logo/client-logo-1.png"
+#     url: "#"
 
-  - logo: "assets/images/clients-logo/client-logo-2.png"
-    url: "#"
+#   - logo: "assets/images/clients-logo/client-logo-2.png"
+#     url: "#"
 
-  - logo: "assets/images/clients-logo/client-logo-3.png"
-    url: "#"
+#   - logo: "assets/images/clients-logo/client-logo-3.png"
+#     url: "#"
 
-  - logo: "assets/images/clients-logo/client-logo-4.png"
-    url: "#"
+#   - logo: "assets/images/clients-logo/client-logo-4.png"
+#     url: "#"
 
-  - logo: "assets/images/clients-logo/client-logo-5.png"
-    url: "#"
+#   - logo: "assets/images/clients-logo/client-logo-5.png"
+#     url: "#"
 
 #-------------------------------
 # Contact Section
