@@ -15,7 +15,7 @@ menu:
   - { name: PEOPLE, link: "/about" }
   - { name: RESEARCH, link: "/blog" }
   - { name: PUBLICATION, link: "/portfolio" }
-  - { name: CONTACT, link: "/contact" }
+  - { name: PROJECT, link: "/contact" }
   - { name: CONTACT, link: "/contact" }
 
 #-------------------------------
