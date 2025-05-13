@@ -2,13 +2,13 @@
 #-------------------------------
 # General Site Settings
 
-title: SERA Lab
+title: SERA Lab.
 logo:
 author: Seyeon Kim
-description: SERA Lab
+description: SERA Lab.
 email: seyeon625@korea.ac.kr
 phone: +(82) 02 3290 3973 
-address: Room 501, Woojung Hall of Informatics, Korea University, Seoul, South Korea
+address: Room 501A, Woojung Hall of Informatics, Korea University, Seoul, South Korea
 copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com) & Developed by [Getjekyllthemes](https://getjekyllthemes.com)
 
 menu:
