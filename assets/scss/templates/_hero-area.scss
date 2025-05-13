@@ -1,15 +1,19 @@
 .hero-area {
-  padding: 200px 0 100px;
+  padding: 100px 0 60px; // 상단 100px, 하단 60px
+
   position: relative;
+
   @include tablet {
-    padding: 250px 0 150px;
+    padding: 140px 0 80px; // 태블릿에서도 축소
     overflow: hidden;
   }
-  h1{
+
+  h1 {
     position: relative;
     z-index: 2;
   }
 }
+
 
 .layer {
   position: absolute;
