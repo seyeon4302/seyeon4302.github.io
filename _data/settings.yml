@@ -16,7 +16,7 @@ menu:
   # - { name: RESEARCH, link: "/blog" }
   - { name: PUBLICATION, link: "/publications" }
   # - { name: PROJECT, link: "/contact" }
-  # - { name: CONTACT, link: "/contact" }
+  - { name: CONTACT, link: "/contact" }
 
 #-------------------------------
 # Google Analytics Section
