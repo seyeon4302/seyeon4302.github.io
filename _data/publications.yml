@@ -1,3 +1,11 @@
+- authors: Hojeong Lee, YuHong Kim, Sangwoo Ryu, James Won-Ki Hong, Sangtae Ha, Seyeon Kim*
+  title: "DeltaStream: 2D-Inferred Delta Encoding for Live Volumetric Video Streaming"
+  venue: ACM International Conference on Mobile Systems, Applications, and Services (ACM Mobisys)
+  year: 2025
+  type: conference
+  link: .
+  icon: assets/images/publications/deltastream.png
+
 - authors: Kyungmin Bin, Seyeon Kim, Sangtae Ha, Song Chong, Kyunghan Lee
   title: "NeuroBalancer: Balancing System Frequencies with Punctual Laziness for Timely and Energy-efficient DNN Inferences"
   venue: IEEE Transactions on Mobile Computing (IEEE TMC)
