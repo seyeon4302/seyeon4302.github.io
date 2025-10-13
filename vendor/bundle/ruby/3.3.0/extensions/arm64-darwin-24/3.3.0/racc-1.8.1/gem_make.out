@@ -1,0 +1,18 @@
+current directory: /Users/seyeon/seyeon4302.github.io/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+/Users/seyeon/.rbenv/versions/3.3.1/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/seyeon/seyeon4302.github.io/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251013-36767-u62oo6 sitelibdir\=./.gem.20251013-36767-u62oo6 clean
+
+current directory: /Users/seyeon/seyeon4302.github.io/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251013-36767-u62oo6 sitelibdir\=./.gem.20251013-36767-u62oo6
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/seyeon/seyeon4302.github.io/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251013-36767-u62oo6 sitelibdir\=./.gem.20251013-36767-u62oo6 install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20251013-36767-u62oo6/racc
+
+current directory: /Users/seyeon/seyeon4302.github.io/vendor/bundle/ruby/3.3.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20251013-36767-u62oo6 sitelibdir\=./.gem.20251013-36767-u62oo6 clean

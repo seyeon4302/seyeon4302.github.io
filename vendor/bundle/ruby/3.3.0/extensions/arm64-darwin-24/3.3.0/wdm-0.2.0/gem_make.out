@@ -1,0 +1,14 @@
+current directory: /Users/seyeon/seyeon4302.github.io/vendor/bundle/ruby/3.3.0/gems/wdm-0.2.0/ext/wdm
+/Users/seyeon/.rbenv/versions/3.3.1/bin/ruby extconf.rb
+
+current directory: /Users/seyeon/seyeon4302.github.io/vendor/bundle/ruby/3.3.0/gems/wdm-0.2.0/ext/wdm
+make DESTDIR\= sitearchdir\=./.gem.20251013-36767-uct5j0 sitelibdir\=./.gem.20251013-36767-uct5j0 clean
+
+current directory: /Users/seyeon/seyeon4302.github.io/vendor/bundle/ruby/3.3.0/gems/wdm-0.2.0/ext/wdm
+make DESTDIR\= sitearchdir\=./.gem.20251013-36767-uct5j0 sitelibdir\=./.gem.20251013-36767-uct5j0
+
+current directory: /Users/seyeon/seyeon4302.github.io/vendor/bundle/ruby/3.3.0/gems/wdm-0.2.0/ext/wdm
+make DESTDIR\= sitearchdir\=./.gem.20251013-36767-uct5j0 sitelibdir\=./.gem.20251013-36767-uct5j0 install
+
+current directory: /Users/seyeon/seyeon4302.github.io/vendor/bundle/ruby/3.3.0/gems/wdm-0.2.0/ext/wdm
+make DESTDIR\= sitearchdir\=./.gem.20251013-36767-uct5j0 sitelibdir\=./.gem.20251013-36767-uct5j0 clean

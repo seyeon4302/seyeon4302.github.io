@@ -27,6 +27,11 @@ sass:
 
 # Exclude from processing.
 exclude:
+  - vendor
+  - vendor/**
+  - node_modules
+  - package.json
+  - package-lock.json
   - Gemfile
   - Gemfile.lock
   - LICENSE.text

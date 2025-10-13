@@ -1,104 +1,208 @@
 /* ================================
    SERA Lab - Custom Styles (CSS)
    - 배너: 고려대 크림슨
-   - 헤더: 진입 시 반투명, 스크롤 후 .nav-bg로 다크
-   - 헤더/배너 겹침 방지 + 컴팩트 패딩
+   - 헤더: 초기 반투명(짙은 톤), 스크롤 후 .nav-bg로 다크
+   - 헤더 높이 자동 동기화(JS) + 폴백 값
+   - 배너/본문 오프셋을 --navbar-height 기준으로 제어
    ================================= */
 
-/* ===== 배너만 크림슨 ===== */
+/* ===== 기본 폴백(스크립트가 실제 값으로 덮어씀) ===== */
+:root { --navbar-height: 40px; }                 /* 모바일: 로고 28px 기준 */
+@media (min-width: 992px) { :root { --navbar-height: 44px; } }  /* 데스크탑: 로고 30px 기준 */
+
+/* ===== 배너: 고려대 크림슨 ===== */
 .bg-ku-crimson { background-color: #A6192E !important; }
-.page-title,
-.page-title-alt {
+.page-title, .page-title-alt {
   background-image: none !important;
   background-color: #A6192E !important;
 }
 
-/* 기본 배너 패딩 (짧게) */
-.page-title-alt {
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
-}
+/* 배너 내부 기본 패딩 */
+.page-title-alt { padding-top: 1rem; padding-bottom: 1rem; }
 @media (min-width: 992px) {
   .page-title-alt { padding-top: 1.25rem; padding-bottom: 1.25rem; }
 }
 
-/* ===== 헤더: 초기 반투명 → 스크롤 시 완전 다크(.nav-bg) ===== */
-.navigation {
+/* 배너 상단이 헤더에 가리지 않도록: 헤더 높이만큼 더함 */
+.page-title-alt.hero-under-header,
+.page-title.hero-under-header {
+  padding-top: calc(var(--navbar-height) + 1rem) !important;  /* 필요시 1.25rem/1.5rem */
+}
+
+/* ===== 헤더: 초기 반투명 → 스크롤 후 다크(.nav-bg) ===== */
+header.navigation {
   position: fixed; top: 0; left: 0; right: 0;
   z-index: 1030 !important;
-
-  /* 초기: 반투명 다크 + 글라스 효과 */
-  background-color: rgba(34, 34, 34, 0.35);
+  background-color: rgba(6, 6, 6, 0.8);          /* 진입 시 반투명 다크 */
   -webkit-backdrop-filter: saturate(150%) blur(6px);
   backdrop-filter: saturate(150%) blur(6px);
-
   transition: background-color .3s ease, box-shadow .3s ease, backdrop-filter .3s ease, padding .2s ease;
   box-shadow: none;
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
-
-/* 스크롤 후(또는 강제로) 적용될 상태: 완전 다크 */
-.navigation.nav-bg {
-  background-color: #222 !important;
+header.navigation.nav-bg {
+  background-color: #222 !important;            /* 스크롤 후 완전 다크 */
   -webkit-backdrop-filter: none;
   backdrop-filter: none;
   box-shadow: 0 2px 10px rgba(0,0,0,.12);
   border-bottom: none;
 }
 
-/* 네비 항목 가독성 (화이트) + 살짝의 텍스트 그림자 */
+/* ===== 네브바/컨테이너: 로고를 진짜 왼쪽 끝에 붙이기 ===== */
+/* 네브바 좌패딩 제거 + 노치 대응 */
+header.navigation .navbar {
+  padding-left: 0 !important;
+  padding-left: max(0px, env(safe-area-inset-left)) !important;  /* iPhone 노치 보호 */
+  padding-right: 8px !important;   /* 필요하면 0~12px 사이로 조절 */
+  height: 44px !important;         /* 바 높이 고정 */
+  min-height: 44px !important;
+  overflow: visible;                /* 로고가 살짝 넘쳐도 보이게 */
+}
+/* .container를 fluid처럼: 가운데 정렬/좌우 패딩 제거 */
+header.navigation .navbar > .container,
+header.navigation .navbar > .container-fluid {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 8px !important;    /* 우측 여백만 살짝 */
+}
+
+/* ===== 브랜드(로고 + 텍스트) ===== */
+/* 간격 변수: 데스크탑 넉넉, 모바일은 조정 */
+:root { --brand-gap: 3.25rem; }
+@media (max-width: 991.98px) { :root { --brand-gap: 1rem; } }
+
+header.navigation .navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--brand-gap);            /* ✅ 로고-텍스트 간격 여기서 제어 */
+  margin-left: 0 !important;        /* 왼쪽 완전 붙임 */
+  padding-left: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+/* HTML에 mr-2가 있어도 무시 */
+header.navigation .navbar-brand .brand-mark.mr-2 { margin-right: 0 !important; }
+
+/* 로고 크기 (바 높이는 유지) */
+header.navigation .navbar-brand img,
+header.navigation .navbar-brand .brand-mark {
+  height: 28px !important;          /* 모바일 기본 */
+  max-height: 28px !important;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* 데스크탑: 레이아웃 높이는 유지하면서 시각적 확대 */
+@media (min-width: 992px) {
+  header.navigation .navbar { min-height: 44px !important; }    /* 바 높이 유지 */
+  header.navigation .navbar-brand .brand-mark,
+  header.navigation .navbar-brand img {
+    height: 32px !important;         /* 레이아웃 계산용 실제 높이 */
+    transform: scale(1.8);           /* ≈ 70px 체감 (원하면 2.0~2.5로) */
+    transform-origin: left center;
+    margin-right: 0.4rem;
+  }
+}
+
+/* 브랜드 텍스트 */
+header.navigation .navbar-brand .brand-text,
+header.navigation .navbar-brand h3 {
+  color: #fff !important;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: .3px;
+  font-weight: 700;
+}
+
+/* 네비 항목(글자 크기 유지, 가독성 유지용 그림자) */
 .navbar-dark .navbar-nav .nav-link {
   color: #fff !important;
   text-shadow: 0 1px 2px rgba(0,0,0,.4);
-}
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link:focus,
-.navbar-dark .navbar-nav .nav-link.active {
-  color: #f8f9fa !important;
+  padding-top: 2px !important;      /* 클릭 영역 최소 확보 */
+  padding-bottom: 2px !important;
+  line-height: 1.15 !important;
 }
 
-/* ===== 헤더 컴팩트 높이 ===== */
-.navigation .navbar {
-  padding-top: 0.1rem !important;
-  padding-bottom: 0.1rem !important;
-}
-/* 메뉴 아이템 자체 패딩도 살짝 축소 */
-.navbar-dark .navbar-nav .nav-link {
-  padding-top: 0.25rem !important;
-  padding-bottom: 0.25rem !important;
-}
-/* 로고 높이 조정 */
-.navbar-brand img { max-height: 30px; }
+/* 햄버거 버튼 초-컴팩트 */
+header.navigation .navbar-toggler { padding: 1px 5px !important; margin: 0 !important; }
 
-/* ===== 헤더 높이 변수 & 기본 오프셋 ===== */
-:root { --navbar-height: 44px; }                 /* 모바일 기준 */
-@media (min-width: 992px) { :root { --navbar-height: 48px; } }  /* 데스크톱 */
-
-/* 기본: 히어로(배너) 없는 페이지는 body 상단 패딩으로 공간 확보 */
+/* ===== 본문 오프셋 ===== */
 body { padding-top: var(--navbar-height); }
 
-/* ✅ 히어로(배너) 있는 페이지는 body 패딩 제거 + 배너 상단패딩에 헤더높이 더하기 */
+/* (옵션) 히어로를 배너로 흡수하는 레이아웃을 쓰려면 아래 주석 해제
 body.has-hero { padding-top: 0; }
-body.has-hero .page-title,
-body.has-hero .page-title-alt {
-  padding-top: calc(1.25rem + var(--navbar-height));
+body.has-hero .page-title, body.has-hero .page-title-alt {
+  padding-top: calc(var(--navbar-height) + 1rem);
 }
-@media (max-width: 991.98px) {
-  body.has-hero .page-title,
-  body.has-hero .page-title-alt {
-    padding-top: calc(1rem + var(--navbar-height));
-  }
-}
+*/
 
 /* ===== 접근성: 투명/블러 최소화 선호 시 ===== */
 @media (prefers-reduced-transparency: reduce),
        (prefers-reduced-motion: reduce) {
-  .navigation {
+  header.navigation {
     background-color: rgba(34,34,34,0.85);
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
   }
 }
 
-/* ===== 기타 개선 ===== */
+/* ===== Simple Crimson Hero (홈 히어로) ===== */
+.hero-area.hero-simple {
+  background-color: #A6192E !important;     /* 고려대 크림슨 단색 */
+  background-image: none !important;
+  position: relative;
+  overflow: hidden;
+  /* 헤더에 가리지 않게: 헤더 높이만큼 + 여유 */
+  padding-top: calc(var(--navbar-height) + 1.5rem);
+  padding-bottom: 2.5rem;
+}
+.hero-area.hero-simple .layer,
+.hero-area.hero-simple .layer-bg,
+.hero-area.hero-simple img { display: none !important; }
+.hero-area.hero-simple h1 { margin: 0; }
+.hero-area.hero-simple .list-unstyled a {
+  color: #fff !important;
+  opacity: .9;
+}
+.hero-area.hero-simple .list-unstyled a:hover { opacity: 1; }
+
+/* ===== 기타 ===== */
 .navbar-toggler { outline: none; box-shadow: none !important; }
+/* === Flush-left brand & extra spacing === */
+
+/* 1) 네브바의 왼쪽 패딩 완전 제거 (안전영역도 강제 0) */
+header.navigation .navbar {
+  padding-left: 0 !important;
+}
+
+/* 2) 브랜드 앵커를 화면 가장자리로 살짝 당겨서 완전 붙이기
+      - 데스크탑에선 -16px 정도가 딱 맞는 느낌
+      - 노치(iPhone) 있는 기기는 안전영역만큼 자동 보정 */
+header.navigation .navbar-brand {
+  margin-left: -16px !important; /* 더 붙이고 싶으면 -20px까지 */
+  padding-left: 0 !important;
+}
+@supports (padding: max(0px)) {
+  header.navigation .navbar-brand {
+    margin-left: calc(-16px + env(safe-area-inset-left, 0px)) !important;
+  }
+}
+
+/* 3) 로고-텍스트 간격 더 벌리기 (스케일 보정 포함) */
+@media (min-width: 992px) {
+  header.navigation .navbar-brand { gap: 2.2rem !important; }  /* 2.0~2.6rem에서 조정 */
+  header.navigation .navbar-brand .brand-mark,
+  header.navigation .navbar-brand img {
+    margin-right: 0.6rem !important;  /* 스케일로 인한 시각적 붙음 보정 */
+  }
+}
+
+/* (옵션) 모바일에서도 살짝 더 띄우고 싶다면 주석 해제
+@media (max-width: 991.98px) {
+  header.navigation .navbar-brand { gap: 1.2rem !important; }
+}
+*/

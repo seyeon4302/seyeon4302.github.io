@@ -1,12 +1,18 @@
 <header class="navigation fixed-top">
   <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand font-tertiary h3" href="{{ site.baseurl }}/">
-      {% if site.data.settings.logo %}
-        <img src="{{ site.data.settings.logo | absolute_url }}" alt="{{ site.data.settings.title }}">
-        {% else %}
-        <h3 class="text-white font-tertiary">{{site.data.settings.title}}</h3>
-      {% endif %}
+    <a class="navbar-brand font-tertiary h3 d-flex align-items-center" href="{{ site.baseurl }}/">
+      <!-- ✅ 고려대 로고 -->
+      <img
+        src="{{ '/assets/images/ku-logo.svg' | relative_url }}"
+        alt="Korea University"
+        class="brand-mark mr-2"
+      />
+      <!-- ✅ 사이트 타이틀 (없으면 SERA LAB. 로 fallback) -->
+      <span class="brand-text">
+        {{ site.data.settings.title | default: 'SERA LAB.' }}
+      </span>
     </a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
       aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
