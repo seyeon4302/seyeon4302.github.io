@@ -3,7 +3,7 @@
   venue: ACM International Conference on Mobile Systems, Applications, and Services (ACM Mobisys)
   year: 2025
   type: conference
-  link: .
+  link: https://dl.acm.org/doi/abs/10.1145/3711875.3729131
   icon: assets/images/publications/deltastream.png
 
 - authors: Kyungmin Bin, Seyeon Kim, Sangtae Ha, Song Chong, Kyunghan Lee
