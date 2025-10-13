@@ -21,7 +21,7 @@
 
   <!-- Main Stylesheet -->
   <link href="{{ '/assets/scss/style.css' | relative_url }}" rel="stylesheet">
-
+  <link rel="stylesheet" href="{{ '/assets/scss/custom.css' | relative_url }}">
   <!--Favicon-->
   <link rel="shortcut icon" href="{{ '/assets/images/favicon.png' | relative_url }} " type="image/x-icon">
   <link rel="icon" href="{{ '/assets/images/favicon.png' | relative_url }} " type="image/x-icon">
@@ -31,6 +31,6 @@
   {% if site.data.settings.google-analytics %}
     {% include google-analytics.html %}
   {% endif %}
-  <link rel="stylesheet" href="{{ '/assets/scss/custom.css' | relative_url }}">
+  
 
 </head>
