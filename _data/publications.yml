@@ -1,3 +1,20 @@
+- title: "eXpressSFU: Toward Super-Scalable Video Conferencing with SmartNICs"
+  venue: USENIX Symposium on Networked Systems Design and Implementation (USENIX NSDI)
+  year: 2026
+  type: conference
+  link: .
+  icon: assets/images/publications/expresssfu.png
+
+
+
+- title: "QCON: Seamless QoE-Aware 5G Streaming via Multi-Connectivity"
+  venue: USENIX Symposium on Networked Systems Design and Implementation (USENIX NSDI)
+  year: 2026
+  type: conference
+  link: .
+  icon: assets/images/publications/qcon.png
+
+
 - authors: Hojeong Lee, YuHong Kim, Sangwoo Ryu, James Won-Ki Hong, Sangtae Ha, Seyeon Kim*
   title: "DeltaStream: 2D-Inferred Delta Encoding for Live Volumetric Video Streaming"
   venue: ACM International Conference on Mobile Systems, Applications, and Services (ACM Mobisys)
