@@ -1,19 +1,33 @@
+/* ================================
+   SERA Lab - Custom Styles (CSS)
+   - 배너: 고려대 크림슨
+   - 헤더: 진입 시 반투명, 스크롤 후 다크
+   - 헤더/배너 겹침 방지 + 컴팩트 패딩
+   ================================= */
+
 /* ===== [배너만 크림슨] ===== */
 .bg-ku-crimson { background-color: #A6192E !important; }
-.page-title, .page-title-alt { background-image: none !important; background-color: #A6192E !important; }
-.page-title-alt { padding-top: 1.25rem; padding-bottom: 1.25rem; }
+.page-title,
+.page-title-alt {
+  background-image: none !important;
+  background-color: #A6192E !important;
+}
+.page-title-alt {
+  padding-top: 1rem;     /* 기본 1.25rem → 1rem */
+  padding-bottom: 1rem;
+}
 
 /* ===== [헤더: 초기 반투명 → 스크롤 시 완전 다크] ===== */
 .navigation {
   position: fixed; top: 0; left: 0; right: 0;
   z-index: 1030 !important;
 
-  /* 초기: 반투명 다크 + 글라스 효과 (배너 위에 얹힘 + 글씨 가독성 확보) */
+  /* 초기: 반투명 다크 + 글라스 효과 (밝은 배경에서도 텍스트 가독성 확보) */
   background-color: rgba(34, 34, 34, 0.35);
   -webkit-backdrop-filter: saturate(150%) blur(6px);
   backdrop-filter: saturate(150%) blur(6px);
 
-  transition: background-color .3s ease, box-shadow .3s ease, backdrop-filter .3s ease;
+  transition: background-color .3s ease, box-shadow .3s ease, backdrop-filter .3s ease, padding .2s ease;
   box-shadow: none;
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
@@ -28,16 +42,47 @@
 }
 
 /* 네비 항목 가독성 + 살짝의 글자 그림자 */
-.navbar-dark .navbar-nav .nav-link { color: #fff !important; text-shadow: 0 1px 2px rgba(0,0,0,.4); }
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,.4);
+}
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:focus,
-.navbar-dark .navbar-nav .nav-link.active { color: #f8f9fa !important; }
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #f8f9fa !important;
+}
 
-/* 헤더 높이 살짝 줄이기 */
-.navigation .navbar { padding-top: 0.3rem !important; padding-bottom: 0.3rem !important; }
-.navbar-brand img { max-height: 40px; }
+/* ===== [헤더 컴팩트 높이] ===== */
+.navigation .navbar {
+  padding-top: 0.15rem !important;     /* 0.3rem → 0.15rem */
+  padding-bottom: 0.15rem !important;
+}
+/* 메뉴 아이템 자체 패딩도 살짝 축소 */
+.navbar-dark .navbar-nav .nav-link {
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+}
+/* 로고 높이 조정 */
+.navbar-brand img {
+  max-height: 34px; /* 필요 시 32~36px 사이 미세 조정 */
+}
 
 /* ===== [겹침 방지: 본문을 헤더 아래로] ===== */
-:root { --navbar-height: 64px; }
-@media (min-width: 992px) { :root { --navbar-height: 72px; } }
+:root { --navbar-height: 56px; }           /* 모바일 기준 */
+@media (min-width: 992px) { :root { --navbar-height: 60px; } }  /* 데스크톱에서 소폭 여유 */
 body { padding-top: var(--navbar-height); }
+
+/* ===== [접근성: 모션/블러 최소화 선호 시] ===== */
+@media (prefers-reduced-transparency: reduce), (prefers-reduced-motion: reduce) {
+  .navigation {
+    background-color: rgba(34,34,34,0.85);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+}
+
+/* ===== [보조: 기타 잔상/중첩 이슈 방지] ===== */
+.navbar-toggler {
+  outline: none;
+  box-shadow: none !important;
+}
