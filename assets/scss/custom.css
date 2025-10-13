@@ -150,59 +150,34 @@ body.has-hero .page-title, body.has-hero .page-title-alt {
   }
 }
 
-/* ===== Simple Crimson Hero (홈 히어로) ===== */
+/* === Hero: shrink top space above title (no font-size change) === */
 .hero-area.hero-simple {
-  background-color: #A6192E !important;     /* 고려대 크림슨 단색 */
-  background-image: none !important;
-  position: relative;
-  overflow: hidden;
-  /* 헤더에 가리지 않게: 헤더 높이만큼 + 여유 */
-  padding-top: calc(var(--navbar-height) + 1.5rem);
-  padding-bottom: 2.5rem;
-}
-.hero-area.hero-simple .layer,
-.hero-area.hero-simple .layer-bg,
-.hero-area.hero-simple img { display: none !important; }
-.hero-area.hero-simple h1 { margin: 0; }
-.hero-area.hero-simple .list-unstyled a {
-  color: #fff !important;
-  opacity: .9;
-}
-.hero-area.hero-simple .list-unstyled a:hover { opacity: 1; }
-
-/* ===== 기타 ===== */
-.navbar-toggler { outline: none; box-shadow: none !important; }
-/* === Flush-left brand & extra spacing === */
-
-/* 1) 네브바의 왼쪽 패딩 완전 제거 (안전영역도 강제 0) */
-header.navigation .navbar {
-  padding-left: 0 !important;
+  /* 헤더 높이 + 최소 여유만 */
+  padding-top: calc(var(--navbar-height) + 0.05rem) !important;
 }
 
-/* 2) 브랜드 앵커를 화면 가장자리로 살짝 당겨서 완전 붙이기
-      - 데스크탑에선 -16px 정도가 딱 맞는 느낌
-      - 노치(iPhone) 있는 기기는 안전영역만큼 자동 보정 */
-header.navigation .navbar-brand {
-  margin-left: -16px !important; /* 더 붙이고 싶으면 -20px까지 */
-  padding-left: 0 !important;
-}
-@supports (padding: max(0px)) {
-  header.navigation .navbar-brand {
-    margin-left: calc(-16px + env(safe-area-inset-left, 0px)) !important;
-  }
+/* 태블릿 이상에서도 과하지 않게 */
+@media (min-width: 768px) {
+  .hero-area.hero-simple { padding-top: calc(var(--navbar-height) + 0.5rem) !important; }
 }
 
-/* 3) 로고-텍스트 간격 더 벌리기 (스케일 보정 포함) */
+/* 데스크탑 */
 @media (min-width: 992px) {
-  header.navigation .navbar-brand { gap: 2.2rem !important; }  /* 2.0~2.6rem에서 조정 */
-  header.navigation .navbar-brand .brand-mark,
-  header.navigation .navbar-brand img {
-    margin-right: 0.6rem !important;  /* 스케일로 인한 시각적 붙음 보정 */
-  }
+  .hero-area.hero-simple { padding-top: calc(var(--navbar-height) + 0.75rem) !important; }
 }
 
-/* (옵션) 모바일에서도 살짝 더 띄우고 싶다면 주석 해제
-@media (max-width: 991.98px) {
-  header.navigation .navbar-brand { gap: 1.2rem !important; }
+/* 혹시 상단 마진이 들어갔다면 제거 */
+.hero-area.hero-simple .container,
+.hero-area.hero-simple .row,
+.hero-area.hero-simple h1 { margin-top: 0 !important; }
+
+/* iPhone 노치가 있는 환경에서도 최대한 붙이되 안전영역은 보존 */
+@supports (padding: max(0px)) {
+  .hero-area.hero-simple {
+    padding-top: calc(var(--navbar-height) + max(0px, env(safe-area-inset-top)) + 0.25rem) !important;
+  }
 }
-*/
+.hero-area.hero-simple h1 { font-size: 2.0rem !important; line-height: 1.2; }   /* <576px */
+@media (min-width: 576px) { .hero-area.hero-simple h1 { font-size: 2.4rem !important; } }
+@media (min-width: 768px) { .hero-area.hero-simple h1 { font-size: 2.8rem !important; } }
+@media (min-width: 992px) { .hero-area.hero-simple h1 { font-size: 3.2rem !important; } }
