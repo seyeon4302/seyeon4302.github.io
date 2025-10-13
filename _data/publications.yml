@@ -1,18 +1,16 @@
-- title: "eXpressSFU: Toward Super-Scalable Video Conferencing with SmartNICs"
+- title: "eXpressSFU: Toward Super-Scalable Video Conferencing with SmartNICs (ACCEPTED)"
   venue: USENIX Symposium on Networked Systems Design and Implementation (USENIX NSDI)
   year: 2026
   type: conference
   link: .
   icon: assets/images/publications/expresssfu.png
 
-
-
-- title: "QCON: Seamless QoE-Aware 5G Streaming via Multi-Connectivity"
+- title: "QCON: Seamless QoE-Aware 5G Streaming via Multi-Connectivity (ACCEPTED)"
   venue: USENIX Symposium on Networked Systems Design and Implementation (USENIX NSDI)
   year: 2026
   type: conference
   link: .
-  icon: assets/images/publications/qcon.png
+  icon: assets/images/publications/QCON.png
 
 
 - authors: Hojeong Lee, YuHong Kim, Sangwoo Ryu, James Won-Ki Hong, Sangtae Ha, Seyeon Kim*
