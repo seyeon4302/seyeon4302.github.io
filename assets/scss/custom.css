@@ -1,8 +1,16 @@
-.bg-ku-crimson { background-color: #A6192E; }
+$ku-crimson: #A6192E;
 
-.page-title-alt { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+.bg-ku-crimson {
+  background-color: $ku-crimson !important;
+}
 
-.bg-shape-1, .bg-shape-2, .bg-shape-3,
-.bg-shape-4, .bg-shape-5, .bg-shape-6 {
-  display: none !important;
+.page-title,
+.page-title-alt {
+  background-image: none !important;
+  background-color: $ku-crimson !important;
+}
+
+.page-title-alt {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
