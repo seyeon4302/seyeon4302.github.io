@@ -1,3 +1,11 @@
+- title: "PAVE: Mitigating Non-Congestive Delay for Seamless Video Calls over NextG Mobile Networks (ACCEPTED)"
+  venue: IEEE International Conference on Computer Communications (IEEE INFOCOM)
+  year: 2026
+  type: conference
+  link: .
+  icon: assets/images/publications/PAVE.png
+
+
 - title: "eXpressSFU: Toward Super-Scalable Video Conferencing with SmartNICs (ACCEPTED)"
   venue: USENIX Symposium on Networked Systems Design and Implementation (USENIX NSDI)
   year: 2026
